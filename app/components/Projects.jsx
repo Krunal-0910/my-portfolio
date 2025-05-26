@@ -2,7 +2,6 @@
 import { useState } from 'react';
 
 
-// 1. Define your projects as arrays
 const softwareProjects = [
   {
     title: "Weather Brainiac",
@@ -22,6 +21,14 @@ const softwareProjects = [
                 
 
 
+  },
+  {
+    title:"AI-Powered Resume Analyzer",
+    description: `
+    • Built NLP-based system to match resumes with job descriptions, achieving 92% skill-match accuracy through keyword extraction.
+    • Designed a responsive file upload and scoring UI, improving accessibility and usage for both desktop and mobile platforms.
+    • Secured and deployed application on AWS EC2 with Nginx, maintaining and safeguarding sensitive resume data.    
+    `
   }
 ];
 

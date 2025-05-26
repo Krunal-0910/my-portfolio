@@ -14,7 +14,7 @@ const Certifications=()=>{
                     </div>
                     <div className="flex items-center mb-2">
                     <FaAngleRight className="text-blue-500 mr-2" />
-                    <span>AWS Certified Cloud Practitioner (In progress)</span>
+                    <span>AWS Certified Cloud Practitioner </span>
                     </div>
             </div>
             

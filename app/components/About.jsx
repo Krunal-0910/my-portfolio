@@ -6,19 +6,15 @@ return(
     <section id = "about">
         <div class="section-title">
             <h2> About</h2>
-        <p>I am an ambitious undergraduate student in Computer and Information Science, set to graduate in May 2025. 
-          My academic pursuits are characterized by a robust engagement with diverse programming languages such as 
-          Python, Java, C/C++, and Linux. My practical experience includes leading projects like Weather Brainiac, 
-          where I developed a secure login framework that significantly enhanced data privacy and system efficiency. 
-          In Ethereum Empower, I directed the creation of a cutting-edge application utilizing React.js and Tailwind 
-          CSS for efficient blockchain interactions. Additionally, I have managed complex database systems in AirHome, 
-          improving scalability and performance in the real estate sector, and engineered an Autocomplete API that 
-          boosted user engagement by optimizing search functionality.</p>
-        <p>Beyond my technical projects, my ongoing exploration of advanced topics in algorithms and data structures 
-          underscores my dedication to continual learning and professional growth. I remain keenly aware of the 
-          latest industry trends, contributing to my holistic understanding of technology and its applications. 
-          This dynamic blend of hands-on experience and theoretical knowledge prepares me to make impactful 
-          contributions to the evolving tech landscape, while I also enjoy cinema and social outings with friends.</p>
+
+       <p> I’m Krunal Patel, a Junior Software Developer based in Irving, TX, with experience building full-stack applications using Java, Python, React.js, and SQL. I’ve developed APIs, optimized databases, and deployed cloud-native apps on AWS, always focusing on performance, scalability, and user experience.
+        </p>
+        <br></br>
+      <p> I’ve worked on enterprise systems at Wells Fargo and Prudential Finance, where I improved backend response times, automated testing pipelines, and built responsive front-end components. Beyond professional roles, I’ve built projects like an AI-powered Resume Analyzer and a Serverless Expense Tracker, showcasing my ability to solve real-world problems with clean, efficient code.
+        </p>
+        <br></br>
+    <p> I’m passionate about problem-solving, cloud technologies, and building software that makes a difference. Currently, I’m open to opportunities where I can contribute to impactful projects while continuing to grow as a full-stack developer.
+      </p>
       </div>
     
       <div className="about-row">

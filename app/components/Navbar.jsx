@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHome, FaGithub, FaUser, FaFolder, FaEnvelope, FaLinkedin, FaCertificate } from 'react-icons/fa';
+import { FaHome, FaGithub, FaUser, FaFolder, FaEnvelope, FaLinkedin, FaCertificate, FaBusinessTime } from 'react-icons/fa';
 import ContactLinks from './ContactLinks'
 
 const Navbar = () => (
@@ -20,6 +20,7 @@ const Navbar = () => (
     <nav className="nav-menu">
       <ul>
         <li><a href="#hero"><FaHome /> <span>Home</span></a></li>
+        <li><a href="#experience"><FaBusinessTime /> <span>Experience</span></a></li>
         <li><a href="#about"><FaUser /> <span>About</span></a></li>
         <li><a href="#projects"><FaFolder /> <span>Projects</span></a></li>
         <li><a href="#certifications"><FaCertificate /> <span>Certifications</span></a></li>
