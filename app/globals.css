@@ -133,14 +133,23 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  #header .profile .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* space between icons */
+}
   
   #header .profile .social-links a {
     font-size: 18px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;      /* Center horizontally */
+    align-items: center; 
     background: #212431;
     color: #fff;
     line-height: 1;
-    padding: 8px 0;
+    padding: 0;
     margin-right: 4px;
     border-radius: 50%;
     text-align: center;
@@ -148,6 +157,8 @@ body {
     height: 36px;
     transition: 0.3s;
   }
+
+  
   
   #header .profile .social-links a:hover {
     background: #149ddd;
@@ -242,6 +253,47 @@ body {
     left: 0;
   }
 
+  #header .profile image {
+    display: block;
+    width: 120px;
+    margin: 15px auto;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(44, 47, 63);
+    border-image: initial;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img, svg {
+    vertical-align: middle;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.text-center {
+    text-align: center !important;
+}
+.mt-3 {
+    margin-top: 1rem !important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 
   /*--------------------------------------------------------------
 # Hero Section

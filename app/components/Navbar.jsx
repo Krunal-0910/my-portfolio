@@ -8,8 +8,8 @@ const Navbar = () => (
   <header id="header">
     <div className="profile">
       <Image
-        src="/profile.jpg"
-        alt="Profile"
+        src="/.jpg"
+        alt class="img-fluid rounded-circle hoverZoomLink"
         width={120}
         height={120}
       />
