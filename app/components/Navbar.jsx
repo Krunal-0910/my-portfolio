@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHome, FaGithub, FaUser, FaFolder, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaHome, FaGithub, FaUser, FaFolder, FaEnvelope, FaLinkedin, FaCertificate } from 'react-icons/fa';
 
 const Navbar = () => (
   <header id="header">
@@ -25,6 +25,7 @@ const Navbar = () => (
         <li><a href="#hero"><FaHome /> <span>Home</span></a></li>
         <li><a href="#about"><FaUser /> <span>About</span></a></li>
         <li><a href="#projects"><FaFolder /> <span>Projects</span></a></li>
+        <li><a href="#certifications"><FaCertificate /> <span>Certifications</span></a></li>
         <li><a href="#connect"><FaEnvelope /> <span>Contact</span></a></li>
       </ul>
     </nav>

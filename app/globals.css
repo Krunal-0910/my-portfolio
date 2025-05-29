@@ -167,7 +167,7 @@ body {
   }
   
   #main {
-    margin-left: 300px;
+    margin-left: 350px;
   }
   
   @media (max-width: 1199px) {
@@ -205,8 +205,14 @@ body {
     padding: 12px 15px;
     margin-bottom: 8px;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 18px;
   }
+
+  .nav-menu a svg {
+  font-size: 25px;      /* Make the icon itself bigger */
+  min-width: 28px;      /* Prevent shrinking */
+  margin-right: 16px;   /* Space between icon and text */
+}
   
   .nav-menu a i {
     font-size: 24px;
@@ -268,6 +274,7 @@ body {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    
 }
 img, svg {
     vertical-align: middle;
@@ -398,9 +405,38 @@ section {
   left: 0;
 }
 
-.section-title p {
+.about-description-title p {
   text-align: justify;
   margin-bottom: 10px;
+}
+
+.about-description-title h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.about-description-title h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28%;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.about-description-title p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.degree-info-list{
+  margin-left: 5px;
 }
 
 
@@ -517,6 +553,13 @@ section {
   color: #173b6c; /* Dark text color for emphasis */
 }
 
+.certification-title{
+  font-size: 24px; /* Large font size for card titles */
+  margin-bottom: 15px; /* Space below the card title */
+  color: #173b6c; /* Dark text color for emphasis */
+}
+
+
 .card-title li {
   font-size: 15px; /* Font size for list items */
   line-height: 1.6; /* Line height for readability */
@@ -536,6 +579,55 @@ section {
   position: absolute;
   left: 0; /* Aligns bullet to the left */
   top: 7px; /* Centers the bullet vertically */
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  font-weight: 600; /* Slightly less bold for better readability */
+  color: #173b6c; /* Matching color for consistency */
+  margin-right: 15px; /* Increased spacing */
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.about-row{
+  display: flex;
+}
+
+.right-side{
+  margin-left: 60px;
 }
 
 
