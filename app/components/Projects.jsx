@@ -19,8 +19,7 @@ const softwareProjects = [
                 •	Designed a responsive and interactive user interface with real-time data display, leveraging Jinja2 for dynamic HTML templating.
                 •	Utilized SQLAlchemy ORM for database interactions.
                 •	Improved application speed by implementing frontend caching to reduce unnecessary API calls.` 
-                ,
-    githubLink: "-"
+                
 
 
   }
@@ -30,8 +29,7 @@ const projectManagement = [
   {
     title: "Critical Chain vs. Traditional Project Management",
     description: ` •	Analyzed CCPM and TPM methodologies for resource allocation and risk management.
-                   • Delivered a structured report and team presentation highlighting key methodological differences.`,
-    githubLink: "-"
+                   • Delivered a structured report and team presentation highlighting key methodological differences.`
   },
 ];
 
@@ -42,8 +40,7 @@ const databaseProjects = [
     title: "Database Design & Management for Company Resource System",
     description: ` •	Designed and implemented an EER model to manage employees, vendors, sales, and departments.
                    •	Created normalized relational schemas (up to 3NF) and automated reporting using SQL views.
-                   •	Wrote optimized SQL queries for business insights and improved performance with indexing.`,
-    githubLink: "-"
+                   •	Wrote optimized SQL queries for business insights and improved performance with indexing.`
   },
 ];
 
@@ -68,6 +65,7 @@ const Projects = () => {
         flexDirection: "row",
         justifyContent:"center",
         alignItems: "center",
+        marginBottom:30
       }} >
           <button onClick={() => setActiveTab('software')}
             className={activeTab === 'software' ? 'btn btn-primary': 'btn'}
@@ -97,8 +95,8 @@ const Projects = () => {
 };
 
 const ProjectCard = ({ title, description, technologies, githubLink }) => (
-  <div className="card">
-    <div className="card-body">
+  <div className="card" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+    <div className="card-body" style={{ flex: 1, display: "flex", flexDirection: "column" }}>
       <h3 className="card-title">{title}</h3>
         <ul>
           {description.split('\n').filter(Boolean).map((line,idx) => (
@@ -108,7 +106,9 @@ const ProjectCard = ({ title, description, technologies, githubLink }) => (
           
           </ul>
       {githubLink && (
-        <a href={githubLink} s target="_blank" rel="noopener noreferrer" >
+        <a href={githubLink} s target="_blank" rel="noopener noreferrer"
+        style={{ display: "inline-block", marginTop: "auto" }}
+        >
           View on GitHub
         </a>
       )}

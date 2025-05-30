@@ -121,7 +121,7 @@ body {
   #header .profile img {
     margin: 15px auto;
     display: block;
-    width: 120px;
+    width: 150px;
     border: 8px solid #2c2f3f;
   }
   
@@ -140,14 +140,14 @@ body {
     text-decoration: none;
   }
 
-  #header .profile .social-links {
+ .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px; /* space between icons */
 }
   
-  #header .profile .social-links a {
+ .social-links a {
     font-size: 18px;
     display: flex;
     justify-content: center;      /* Center horizontally */
@@ -166,7 +166,7 @@ body {
 
   
   
-  #header .profile .social-links a:hover {
+  .social-links a:hover {
     background: #149ddd;
     color: #fff;
     text-decoration: none;
@@ -267,8 +267,8 @@ body {
 
   #header .profile image {
     display: block;
-    width: 120px;
     margin: 15px auto;
+    width: px;
     border-width: 8px;
     border-style: solid;
     border-color: rgb(44, 47, 63);
@@ -276,6 +276,7 @@ body {
 }
 .rounded-circle {
     border-radius: 50% !important;
+
 }
 .img-fluid {
     max-width: 100%;
@@ -288,10 +289,10 @@ img, svg {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
+
 }
 
 .text-center {
@@ -343,6 +344,10 @@ div {
   align-items: center;
   z-index: 2;
 
+}
+.Contacts-social-links{
+margin-top: 30px;
+display: flex;
 }
 
 #hero h1 {
@@ -582,21 +587,20 @@ section {
 
 .card {
   background: #f7fafe; /* White background for each project card */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
-  border-radius: 8px; /* Rounded corners */
-  height: 350px;
-  border-radius: 3px;
-  border-width: 1px;
-  border-color: rgb(234, 239, 241);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+  border-radius: 10px; /* Rounded corners */
   overflow: hidden; /* Ensures no content overflows */
   margin: 10px 0; /* Margin between cards */
-  transition: transform 0.3s; /* Smooth transform on hover */
+  transition: 0.3s ease-in-out; /* Smooth transform on hover */
   text-align: justify;
+  border-color: #dadada;
+  border-width: 0.5px;
+  margin-bottom: 25px;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slightly raise the card on hover */
-}
+transform: translateY(-5px);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);}
 
 .card-body {
   padding: 20px; /* Padding inside the card */
@@ -756,208 +760,7 @@ section {
   margin-bottom: 20px; 
 }
 
-#connect .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #173b6c;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#connect .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-  text-decoration: none;
-}
 
 
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-/* .contact {
-  padding-bottom: 130px;
-}
 
-.contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .info i {
-  font-size: 20px;
-  color: #149ddd;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #dff3fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #050d18;
-}
-
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #173b6c;
-}
-
-.contact .info .email p {
-  padding-top: 5px;
-}
-
-.contact .info .social-links {
-  padding-left: 60px;
-}
-
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display:none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display:none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .sent-message {
-  display:none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display:none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #37b3ed;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-*/
