@@ -44,9 +44,15 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Inter', 'Open Sans', 'Poppins', Arial, Helvetica, sans-serif;
+    font-size:large;
     color: #272829;
+    
+  
   }
+  p, li {
+  line-height: 1.8;
+}
   
   a {
     color: #149ddd;
@@ -103,7 +109,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 330px;
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     transition: all 0.5s;
@@ -327,13 +333,23 @@ div {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  position: absolute;
+  top: 47%;           /* Adjust this value for perfect vertical placement */
+  left: 50%;
+  transform: translate(-50%, -35%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 70px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 50px;
   color: #fff;
 }
 
@@ -350,6 +366,7 @@ div {
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
+
 
 @media (min-width: 1024px) {
   #hero {
@@ -417,6 +434,40 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #173b6c;
+}
+
+.degree-info-list strong {
+  color: #4f6fb3;
+}
+.btn.btn-primary{
+  background-color: #2563eb;
+   color: #fff;
+}
+.btn{
+  background-color: #f3f4f6;
+  border: 2px solid #2563eb;
+  color: #1e293b;
+  border-radius: 15px;
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  transition: 0.3s ease-in-out;
+  transition-duration: 0.4s;
+  
+  border-color: #040b14;
+}
+.btn:hover {
+ background-color: #e0e7ef;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.btn.btn-primary:hover {
+  background-color: #1d4ed8;
+  color: #fff;
 }
 
 .about-description-title h4::after {
@@ -533,6 +584,10 @@ section {
   background: #f7fafe; /* White background for each project card */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
   border-radius: 8px; /* Rounded corners */
+  height: 350px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgb(234, 239, 241);
   overflow: hidden; /* Ensures no content overflows */
   margin: 10px 0; /* Margin between cards */
   transition: transform 0.3s; /* Smooth transform on hover */
@@ -677,48 +732,21 @@ section {
   background: #fff;
   border: 2px solid #1f5297;
 }
+.flex.items-center.mb-2{
+  display: flex;
+  gap: 8;
+
+}
+.text-blue-500.mr-2{
+  color: #3178c4;
+  height: 20px;
+  margin-top: 4px;
+}
 
 
 /*--------------------------------------------------------------
 # Certificate
 --------------------------------------------------------------*/
-
-#certificate {
-  background: #f3f8ff;
-}
-
-.certificate-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #1f5297;
-  position: relative;
-}
-
-.certificate-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
-}
-
-.certificate-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
-}
-
-.certificate-item p{
-  text-align: justify;
-}
 
 
 #connect .top-line {

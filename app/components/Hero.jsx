@@ -22,7 +22,8 @@ const Hero = () => {
 
     return (
     <section id="hero">
-      <div className="hero-container d-flex flex-column justify-content-center align-items-center">
+      <div className="hero-container d-flex flex-column justify-content-center align-items-center"
+      >
         <h1>Krunal Patel</h1>
         <p>
           I'm a <span ref={el}></span>

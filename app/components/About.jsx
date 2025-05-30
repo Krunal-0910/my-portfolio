@@ -1,3 +1,4 @@
+import { color } from 'framer-motion';
 import { FaAngleRight } from 'react-icons/fa';
 
 const About = () =>{
@@ -31,14 +32,32 @@ return(
           <p className="font-italic">
             Passionate about lifelong learning and dedicated to enhancing knowledge through continuous education and practical experiences.
           </p>
-            <div className="degree-info-list">
-              <ul>
-                <li><FaAngleRight className="align-middle mr-2 text-blue-500"/> <strong>Latest Degree:</strong> <span>Bachelor of Science in Computer Science</span></li>
-                <li><FaAngleRight /> <strong>University:</strong> <span>University of Texas at Dallas</span></li>
-                <li><FaAngleRight /><strong>Graduation Year:</strong> <span>May 2025</span></li>
-                <li> <FaAngleRight /><strong>Specialization:</strong> <span>Software Development</span></li>
-              </ul>
+          <br></br>
+  <div className="degree-info-list">
+  <ul>
+  <li className="flex items-center mb-2">
+    <FaAngleRight className="text-blue-500 mr-2" />
+    <strong>Latest Degree:</strong> <span className="ml-1">Bachelor of Science in Computer Science</span>
+  </li>
+  <br></br>
+  <li className="flex items-center mb-2">
+    <FaAngleRight className="text-blue-500 mr-2" />
+    <strong>University:</strong> <span className="ml-1">University of Texas at Dallas</span>
+  </li>
+  <br></br>
+  <li className="flex items-center mb-2">
+    <FaAngleRight className="text-blue-500 mr-2" />
+    <strong>Graduation Year:</strong> <span className="ml-1">May 2025</span>
+  </li>
+  <br></br>
+  <li className="flex items-center mb-2">
+    <FaAngleRight className="text-blue-500 mr-2" />
+    <strong>Specialization:</strong> <span className="ml-1">Software Development</span>
+  </li>
+  <br></br>
+</ul>
             </div>
+            <br></br>
           <p>
             Dedicated to fostering an environment of learning and innovation, I am committed to utilizing my educational background to contribute positively to academic and professional communities. Engaged in continuous personal and professional development to remain abreast of the latest advancements in technology and education.
           </p>

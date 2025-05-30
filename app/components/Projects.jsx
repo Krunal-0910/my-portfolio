@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 
+
 // 1. Define your projects as arrays
 const softwareProjects = [
   {
@@ -51,10 +52,25 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
-        <h2 className="section-title"> Projects </h2>
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="section-title"
+           style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
+      }}
+      >
+          <h2> Projects </h2>
+          </div>
+        <div className="flex justify-center gap-4 mb-8"
+                  style={{
+        gap: 30,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent:"center",
+        alignItems: "center",
+      }} >
           <button onClick={() => setActiveTab('software')}
-            className={activeTab === 'software' ? 'btn btn-primary' : 'btn'}
+            className={activeTab === 'software' ? 'btn btn-primary': 'btn'}
           >
             Software Development
           </button>
@@ -71,7 +87,7 @@ const Projects = () => {
           </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {(activeTab === 'software' ? softwareProjects : activeTab == 'database' ? databaseProjects : projectManagement).map((project, idx) => (
+          {(activeTab === 'software' ? softwareProjects : activeTab === 'database' ? databaseProjects : projectManagement).map((project, idx) => (
             <ProjectCard key={idx} {...project} />
           ))}
         </div>
@@ -92,7 +108,7 @@ const ProjectCard = ({ title, description, technologies, githubLink }) => (
           
           </ul>
       {githubLink && (
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        <a href={githubLink} s target="_blank" rel="noopener noreferrer" >
           View on GitHub
         </a>
       )}

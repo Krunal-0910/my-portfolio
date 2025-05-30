@@ -7,8 +7,8 @@ import { FaHome, FaGithub, FaUser, FaFolder, FaEnvelope, FaLinkedin, FaCertifica
 const Navbar = () => (
   <header id="header">
     <div className="profile">
-      <Image
-        src="/.jpg"
+      <img
+        src="/img/Krunal.jpg"
         alt class="img-fluid rounded-circle hoverZoomLink"
         width={120}
         height={120}
