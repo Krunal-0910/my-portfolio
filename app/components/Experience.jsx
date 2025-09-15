@@ -2,9 +2,9 @@
 import { useState } from 'react';
 
     const experiences = [
-        {position:"Software Engineer Intern",
+        {position:"Junior Software Developer - Contract",
          company:"Wells Fargo",
-         duration:"May 2024 - August 2024",
+         duration:"Jan 2025 - Present",
          description:
             "• Developed RESTful APIs in Java Spring Boot, improving backend response speed by 18%.\n"+
             "• Built reusable React.js components connected to APIs, reducing UI development time and improving code maintainability.\n"+
@@ -14,7 +14,7 @@ import { useState } from 'react';
                     },
         {position:'Software Engineer Intern',
          company:'Prudential Finance',
-         duration:'May 2025 - July 2025',
+         duration:'May 2024 - November 2024',
          description:
       "• Built dynamic KPI dashboards using Flask, JavaScript, Chart.js, and PostgreSQL to visualize financial insights for analysts.\n"+
       "• Automated nightly ETL pipelines using AWS Step Functions, Lambda, and S3 to streamline multi-department data ingestion.\n"+
